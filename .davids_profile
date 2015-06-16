@@ -1,0 +1,19 @@
+eval "$(rbenv init -)"
+export M2_HOME="/usr/local/apache-maven/apache-maven-3.2.1"
+export M2="$M2_HOME/bin"
+export PATH="usr/local/bin:/Users/thoughtworker/dev/workspace/nokogiri-lab/bin:$PATH"
+export PATH="$M2:$PATH"
+
+export JRUBY_OPTS="-J-Xmx1g -J-Xms1g -J-XX:MaxPermSize=512M -Xcompile.invokedynamic=false"
+
+source ~/.aliases
+
+# Set CLICOLOR if you want Ansi Colors in iTerm2 
+export CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+

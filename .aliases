@@ -1,0 +1,23 @@
+alias ll="ls -al"
+alias be="bundle exec"
+alias brake="noglob bundle exec rake"
+alias bil="bundle install --path=vendor/bundle"
+alias cuke=cucumber
+
+#GIT
+alias gst="git status"
+alias st="gst"
+alias push="git push"
+alias pull="git pull --rebase"
+
+
+kill_all() {
+  ps aux | grep $1 | grep -v grep
+
+  for pid in `ps aux | grep $1 | grep -v grep | awk '{print $2}'`; do
+    read -p "Do you want to kill $pid (y/n)?  " yn
+    case $yn in
+      [Yy]* ) kill -9 $pid;
+    esac
+  done
+}
