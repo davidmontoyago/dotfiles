@@ -13,6 +13,8 @@
   fullhashlog = "log --graph --abbrev-commit '--format=format:%H %C(yellow)%ci%Creset %Cgreen%an%Creset | %s'"
   w = whatchanged
   unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
+  pr = pull --rebase
+  ls = log -20
 
 [color]
   ui = auto
