@@ -1,8 +1,10 @@
 [core]
-  safecrlf = true
+	safecrlf = false
   pager = "less -FX"
   excludesFile = .gitignore
 	editor = vim
+	autocrlf = false
+
 [alias]
   co = checkout
   ci = commit
@@ -16,14 +18,17 @@
   p = pull
   pr = pull --rebase
   ls = log -20
+  amend = commit --amend --no-edit
 
 [color]
   ui = auto
   pager = true
+
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
+
 [format]
   pretty = format:'%Cred%h%Creset -%Cblue%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
 
@@ -32,4 +37,4 @@
 
 [user]
 	name = David Montoya
-	email = dmontoya@thoughtworks.com
+	email = davidmontoyago@gmail.com

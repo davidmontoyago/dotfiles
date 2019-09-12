@@ -1,0 +1,35 @@
+"*":
+  "atom-beautify":
+    yaml: {}
+  "atom-text-editor":
+    "alt-cmd-l": "formatter:format-code"
+    "alt-ctrl-l": "formatter:format-code"
+  autosave:
+    enabled: true
+  core:
+    customFileTypes:
+      "source.yaml": [
+        "yml.tmpl"
+        "yaml.tmpl"
+      ]
+    disabledPackages: [
+      "atom-beautify"
+      "ide-java"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 15
+    preferredLineLength: 120
+  "exception-reporting":
+    userId: "4b7f5c28-3055-4628-a173-cc5341aa0c69"
+  "ide-python":
+    pylsPlugins:
+      pycodestyle:
+        maxLineLength: 120
+    python: "python3"
+  "markdown-preview":
+    useGitHubStyle: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
