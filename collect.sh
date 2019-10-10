@@ -1,5 +1,5 @@
 #!/bin/sh
-set -eu -o pipefail
+set -x
 
 # collect all config files
 cp ~/.gitconfig .
