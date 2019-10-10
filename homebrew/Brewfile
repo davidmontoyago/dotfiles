@@ -1,4 +1,5 @@
 tap "superbrothers/zsh-kubectl-prompt"
+brew "zsh-kubectl-prompt"
 brew "python3"
 brew "kubernetes-cli"
 brew "aws-iam-authenticator"
