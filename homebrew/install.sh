@@ -1,4 +1,4 @@
-#!/bin/sh
-set -eu -o pipefail
+#!/bin/bash
+set -u
 
 brew bundle --file=~/Brewfile

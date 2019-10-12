@@ -1,14 +1,24 @@
-#!/bin/sh
-set -eu -o pipefail
+#!/bin/bash
+set -u -o pipefail
 
-if [ -e ~/Brewfile ]
- then cp ~/Brewfile ~/Brewfile.backup
-fi
-cp ./homebrew/Brewfile ~/
-sh ./homebrew/install.sh
+function install_dotfile() {
+  DOTFILE=$1
+  SRCDIR=${2:-./}
+  STAMP=$(date '+%Y-%m-%d-%H%M%S')
+  if [ -e $HOME/$DOTFILE ]; then
+    echo "backing up previous $DOTFILE..."
+    mv $HOME/$DOTFILE "$HOME/$DOTFILE-backup-$STAMP"
+  fi
 
-cp ~/.bash_profile ~/.bash_profile.backup && cp ./.bash_profile ~/
-cp ~/.bashrc ~/.bashrc.backup && cp ./.bashrc ~/
-cp ~/.devopsrc ~/.devopsrc.backup && cp ./.devopsrc ~/
+  cp $SRCDIR/$DOTFILE $HOME
+  echo "installed $DOTFILE"
+}
+
+install_dotfile "Brewfile" "homebrew"
+bash ./homebrew/install.sh
+
+install_dotfile ".bash_profile"
+install_dotfile ".bashrc"
+install_dotfile ".devopsrc"
 
 source ~/.bash_profile
