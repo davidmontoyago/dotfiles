@@ -17,8 +17,17 @@ function install_dotfile() {
 install_dotfile "Brewfile" "homebrew"
 bash ./homebrew/install.sh
 
+install_dotfile ".zshrc" "oh-my-zsh"
+bash ./oh-my-zsh/install.sh
+
 install_dotfile ".bash_profile"
 install_dotfile ".bashrc"
 install_dotfile ".devopsrc"
 
-source ~/.bash_profile
+echo "switching to zsh..."
+zsh
+
+echo "sourcing now..."
+source ~/.zshrc
+
+echo "done."

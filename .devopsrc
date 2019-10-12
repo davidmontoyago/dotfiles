@@ -6,7 +6,6 @@ RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 ve () {
   aws-vault exec "${AWS_DEFAULT_PROFILE:-read-only}" -- "$@"
 }
-export -f ve
 
 alias k='ve kubectl $@'
 alias kns='ve kubens $@'
