@@ -3,6 +3,8 @@ set +u
 
 VIM_PLUGINS_DIR=$HOME/.vim/bundle
 
+printf "\nsetting up vim...\n"
+
 # install plugin manager
 mkdir -p ~/.vim/autoload $VIM_PLUGINS_DIR && \
   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim

@@ -1,6 +1,8 @@
 #!/bin/bash
 set +u
 
+printf "\nsetting up tmux...\n"
+
 if [ -d $HOME/.tmux/plugins/tpm ]; then
   cd $HOME/.tmux/plugins/tpm && git pull && cd -
 else
