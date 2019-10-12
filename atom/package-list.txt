@@ -1,5 +1,6 @@
 atom-ide-ui
 ide-python
 ide-java
+go-plus
 autocomplete-java
 atom-beautify
