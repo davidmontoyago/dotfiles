@@ -2,5 +2,4 @@ atom-ide-ui
 ide-python
 ide-java
 autocomplete-java
-markdown-preview-plus
 atom-beautify
