@@ -1,11 +1,12 @@
 #!/bin/bash
 set -x
 
-# collect all config files
-cp ~/.gitconfig .
-cp ~/.tmux.conf .
-cp ~/.vimrc .
-cp ~/.zshrc .
-cp ~/.bashrc .
+cp ~/Brewfile ./homebrew/
+cp ~/.zshrc ./oh-my-zsh/
+cp ~/.tmux.conf ./tmux/
 cp ~/.bash_profile .
+cp ~/.bashrc .
+cp ~/.devopsrc .
+cp ~/.gitconfig .
+cp ~/.vimrc .
 cp ~/.atom/config.cson ./atom/
