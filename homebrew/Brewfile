@@ -12,6 +12,10 @@ brew "rbenv"
 brew "kubernetes-cli"
 tap "superbrothers/zsh-kubectl-prompt"
 brew "zsh-kubectl-prompt"
+brew "kubectx"
+brew "stern"
+tap "blendle/blendle"
+brew "kns"
 
 # aws
 brew "aws-iam-authenticator"
