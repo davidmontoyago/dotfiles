@@ -33,10 +33,4 @@ install_dotfile ".devopsrc"
 install_dotfile ".gitconfig"
 install_dotfile ".vimrc"
 
-echo "switching to zsh..."
-zsh
-
-echo "sourcing now..."
-source ~/.zshrc
-
-echo "done."
+echo "done." && zsh
