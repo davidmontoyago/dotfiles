@@ -9,7 +9,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # python
 #export PATH=$HOME/Library/Python/2.7/bin:$PATH
-export PATH=/usr/local/Cellar/python/3.7.2_1/bin:$PATH
+export PATH=/usr/local/Cellar/python/3.7.4_1/bin:$PATH
 
 # go
 export GOPATH=$HOME/projects/go
