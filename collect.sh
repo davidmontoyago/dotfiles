@@ -8,7 +8,7 @@ cp ~/.bash_profile .
 cp ~/.bashrc .
 cp ~/.devopsrc .
 cp ~/.gitconfig .
-cp ~/.vimrc .
+cp ~/.vimrc ./vim/
 cp ~/.atom/config.cson ./atom/
 
 apm list --installed --bare > ./atom/package-list.txt
