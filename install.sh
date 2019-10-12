@@ -35,4 +35,4 @@ install_dotfile ".bashrc"
 install_dotfile ".devopsrc"
 install_dotfile ".gitconfig"
 
-echo "done." && zsh
+echo "done." && chsh -s $(which zsh) && zsh
