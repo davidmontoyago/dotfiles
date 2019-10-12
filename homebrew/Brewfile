@@ -1,4 +1,5 @@
 cask "iterm2"
+brew "git"
 brew "zsh"
 brew "tmux"
 brew "vim"
