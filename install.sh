@@ -22,4 +22,7 @@ install_dotfile ".bashrc"
 install_dotfile ".devopsrc"
 install_dotfile ".gitconfig"
 
+# init workspace
+test -d "$HOME/projects/go" || mkdir -p "$HOME/projects/go"
+
 echo "done." && chsh -s $(which zsh) && zsh
