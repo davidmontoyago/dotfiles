@@ -22,7 +22,9 @@ install_dotfile ".bashrc"
 install_dotfile ".devopsrc"
 install_dotfile ".gitconfig"
 
+bash ./git-secrets/configure.sh
+
 # init workspace
 test -d "$HOME/projects/go" || mkdir -p "$HOME/projects/go"
 
-echo "done." && chsh -s $(which zsh) && zsh
+printf "\ndone." && chsh -s $(which zsh) && zsh
