@@ -20,9 +20,14 @@ bash ./homebrew/install.sh
 install_dotfile ".zshrc" "oh-my-zsh"
 bash ./oh-my-zsh/install.sh
 
+install_dotfile ".tmux.conf" "tmux"
+bash ./tmux/configure.sh
+
 install_dotfile ".bash_profile"
 install_dotfile ".bashrc"
 install_dotfile ".devopsrc"
+install_dotfile ".gitconfig"
+install_dotfile ".vimrc"
 
 echo "switching to zsh..."
 zsh
