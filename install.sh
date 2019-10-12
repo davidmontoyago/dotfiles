@@ -27,10 +27,12 @@ bash ./tmux/configure.sh
 install_dotfile "config.cson" "atom" "$HOME/.atom"
 bash ./atom/configure.sh
 
+install_dotfile ".vimrc" "vim"
+bash ./vim/configure.sh
+
 install_dotfile ".bash_profile"
 install_dotfile ".bashrc"
 install_dotfile ".devopsrc"
 install_dotfile ".gitconfig"
-install_dotfile ".vimrc"
 
 echo "done." && zsh
