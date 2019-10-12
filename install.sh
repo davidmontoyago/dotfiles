@@ -4,14 +4,15 @@ set -u -o pipefail
 function install_dotfile() {
   DOTFILE=$1
   SRCDIR=${2:-./}
+  DESTDIR=${3:-$HOME}
   STAMP=$(date '+%Y-%m-%d-%H%M%S')
-  if [ -e $HOME/$DOTFILE ]; then
+  if [ -e $DESTDIR/$DOTFILE ]; then
     echo "backing up previous $DOTFILE..."
-    mv $HOME/$DOTFILE "$HOME/$DOTFILE-backup-$STAMP"
+    mv $DESTDIR/$DOTFILE "$DESTDIR/$DOTFILE-backup-$STAMP"
   fi
 
-  cp $SRCDIR/$DOTFILE $HOME
-  echo "installed $DOTFILE"
+  cp $SRCDIR/$DOTFILE $DESTDIR
+  echo "installed $DESTDIR/$DOTFILE"
 }
 
 install_dotfile "Brewfile" "homebrew"
@@ -22,6 +23,9 @@ bash ./oh-my-zsh/install.sh
 
 install_dotfile ".tmux.conf" "tmux"
 bash ./tmux/configure.sh
+
+install_dotfile "config.cson" "atom" "$HOME/.atom"
+bash ./atom/configure.sh
 
 install_dotfile ".bash_profile"
 install_dotfile ".bashrc"

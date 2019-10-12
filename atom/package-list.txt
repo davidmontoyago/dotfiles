@@ -1,2 +1,6 @@
-autocomplete-java@1.2.7
-markdown-preview-plus@3.7.1
+atom-ide-ui
+ide-python
+ide-java
+autocomplete-java
+markdown-preview-plus
+atom-beautify

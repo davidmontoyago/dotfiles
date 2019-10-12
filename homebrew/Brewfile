@@ -1,18 +1,33 @@
 cask "iterm2"
 brew "zsh"
+brew "tmux"
+cask "atom"
+
+# langs
+brew "python3"
+brew "rbenv"
+
+# k8s
+brew "kubernetes-cli"
 tap "superbrothers/zsh-kubectl-prompt"
 brew "zsh-kubectl-prompt"
-brew "python3"
-brew "kubernetes-cli"
+
+# aws
 brew "aws-iam-authenticator"
 cask "aws-vault"
 brew "awscli"
-cask "adoptopenjdk"
 brew "chamber"
+
+# java
+cask "adoptopenjdk"
+
+# commands
 brew "watch"
+
+# linters
 brew "hadolint"
 brew "yamllint"
-brew "circleci"
+
+# tools
 brew "jq"
-brew "rbenv"
-brew "tmux"
+brew "circleci"
