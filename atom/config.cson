@@ -1,6 +1,9 @@
 "*":
   "atom-beautify":
     yaml: {}
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
   "atom-text-editor":
     "alt-cmd-l": "formatter:format-code"
     "alt-ctrl-l": "formatter:format-code"
