@@ -9,7 +9,7 @@ ve () {
 
 alias k='ve kubectl $@'
 alias kns='ve kubens $@'
-alias stern='ve stern $@'
+alias vstern='ve stern $@'
 alias eks-preview-services='aws-vault exec preview.tf -- aws eks update-kubeconfig --name di-preview-services-cluster $@ && export AWS_DEFAULT_PROFILE=preview.tf'
 alias eks-preview='aws-vault exec preview.tf -- aws eks update-kubeconfig --name di-preview-cluster $@ && export AWS_DEFAULT_PROFILE=preview.tf'
 alias eks-qa='aws-vault exec preview.tf -- aws eks update-kubeconfig --name di-qa-cluster $@ && export AWS_DEFAULT_PROFILE=preview.tf'
