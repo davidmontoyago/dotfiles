@@ -25,6 +25,15 @@
     preferredLineLength: 120
   "exception-reporting":
     userId: "4b7f5c28-3055-4628-a173-cc5341aa0c69"
+  "go-plus":
+    config: {}
+    panel:
+      focusOnFailure: false
+    test:
+      runTestsOnSave: false
+      runTestsWithCoverage: false
+      runTestsWithShortFlag: false
+      timeout: 0
   "ide-python":
     pylsPlugins:
       pycodestyle:
