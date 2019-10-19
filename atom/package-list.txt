@@ -3,11 +3,16 @@ atom-ide-ui@0.13.0
 autocomplete-java@1.2.7
 formatter-json@1.0.1
 formatter@2.12.4
+go-debug@1.6.2
 go-plus@6.1.0
+go-signature-statusbar@1.2.3
 ide-java@0.9.0
 ide-python@1.5.0
 intellij-idea-keymap@0.2.3
+language-go@0.47.1
 language-hcl@0.4.0
 language-terraform@0.8.1
+markdown-preview@0.160.2
 python-indent@1.1.7
 python-tools@0.6.9
+tree-view@0.228.0
