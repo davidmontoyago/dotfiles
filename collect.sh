@@ -11,4 +11,4 @@ cp ~/.gitconfig .
 cp ~/.vimrc ./vim/
 cp ~/.atom/config.cson ./atom/
 
-apm list --installed --bare > ./atom/package-list.txt
+apm list --installed --bare | sort > ./atom/package-list.txt
