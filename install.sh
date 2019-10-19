@@ -8,7 +8,6 @@ bash ./homebrew/install.sh
 install_dotfile ".zshrc" "oh-my-zsh"
 bash ./oh-my-zsh/install.sh
 
-install_dotfile ".tmux.conf" "tmux"
 bash ./tmux/configure.sh
 
 install_dotfile "config.cson" "atom" "$HOME/.atom"
