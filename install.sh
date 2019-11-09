@@ -23,6 +23,8 @@ install_dotfile ".gitconfig"
 
 bash ./git-secrets/configure.sh
 
+bash ./golang/configure.sh
+
 # init workspace
 GOWORKSPACE="$HOME/projects/go/src/github.com/davidmontoyago"
 test -d "$GOWORKSPACE" || mkdir -p "$GOWORKSPACE"
