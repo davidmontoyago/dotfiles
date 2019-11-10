@@ -25,9 +25,4 @@ bash ./git-secrets/configure.sh
 
 bash ./golang/configure.sh
 
-# init workspace
-GOWORKSPACE="$HOME/projects/go/src/github.com/davidmontoyago"
-test -d "$GOWORKSPACE" || mkdir -p "$GOWORKSPACE"
-test -d "$HOME/bin" || mkdir -p "$HOME/bin"
-
 printf "\ndone." && chsh -s $(which zsh) && zsh
