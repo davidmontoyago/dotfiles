@@ -10,6 +10,8 @@ go-signature-statusbar@1.2.3
 godef@0.2.5
 ide-java@0.9.0
 ide-python@1.5.0
+ide-yaml@0.4.4
+java-importer@1.4.1
 intellij-idea-keymap@0.2.3
 language-hcl@0.4.0
 language-protobuf@0.7.1
