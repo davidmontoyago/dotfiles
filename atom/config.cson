@@ -11,6 +11,11 @@
     enabled: true
   core:
     customFileTypes:
+      "source.hcl": [
+        "tf.jinja2"
+        "tf.tmpl"
+        "tf.tpl"
+      ]
       "source.yaml": [
         "yml.tmpl"
         "yaml.tmpl"
