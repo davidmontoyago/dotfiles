@@ -1,9 +1,12 @@
 #!/bin/bash
 set +u
+source ./functions.sh
 
 VIM_PLUGINS_DIR=$HOME/.vim/bundle
 
 printf "\nsetting up vim...\n"
+
+install_dotfile ".vimrc" "vim"
 
 # install plugin manager
 mkdir -p ~/.vim/autoload $VIM_PLUGINS_DIR && \

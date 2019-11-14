@@ -9,6 +9,7 @@ cask "atom"
 # langs
 brew "go"
 brew "python3"
+brew "python@2"
 brew "rbenv"
 
 # k8s

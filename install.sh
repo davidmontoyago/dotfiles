@@ -2,18 +2,14 @@
 set -u -o pipefail
 source ./functions.sh
 
-install_dotfile "Brewfile" "homebrew"
 bash ./homebrew/install.sh
 
-install_dotfile ".zshrc" "oh-my-zsh"
 bash ./oh-my-zsh/install.sh
 
 bash ./tmux/configure.sh
 
-install_dotfile "config.cson" "atom" "$HOME/.atom"
 bash ./atom/configure.sh
 
-install_dotfile ".vimrc" "vim"
 bash ./vim/configure.sh
 
 install_dotfile ".bash_profile"
