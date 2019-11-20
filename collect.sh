@@ -12,3 +12,5 @@ cp ~/.vimrc ./vim/
 cp ~/.atom/config.cson ./atom/
 
 apm list --installed --bare | sort | sed '1d' > ./atom/package-list.txt
+
+code --list-extensions | sort > ./vscode/extension-list.txt

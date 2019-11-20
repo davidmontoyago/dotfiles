@@ -10,6 +10,8 @@ bash ./tmux/configure.sh
 
 bash ./atom/configure.sh
 
+bash ./vscode/configure.sh
+
 bash ./vim/configure.sh
 
 install_dotfile ".bash_profile"

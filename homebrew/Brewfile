@@ -5,6 +5,7 @@ brew "zsh"
 brew "tmux"
 brew "vim"
 cask "atom"
+cask "visual-studio-code"
 
 # langs
 brew "go"
