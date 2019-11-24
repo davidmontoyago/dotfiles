@@ -1,1 +1,2 @@
 ms-vscode.Go
+zxh404.vscode-proto3
