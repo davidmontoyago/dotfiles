@@ -6,12 +6,11 @@ brew "tmux"
 brew "vim"
 cask "atom"
 cask "visual-studio-code"
-
-# langs
 brew "go"
 brew "python3"
 brew "python@2"
 brew "rbenv"
+brew "protobuf"
 
 # k8s
 brew "kubernetes-cli"

@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 # init workspace
 GOWORKSPACE="$HOME/projects/go/src/github.com/davidmontoyago"
