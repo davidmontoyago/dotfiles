@@ -3,11 +3,13 @@ autoload -U colors; colors
 source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
+# vault-exec
 ve () {
   aws-vault exec "${AWS_DEFAULT_PROFILE:-read-only}" -- "$@"
 }
 
-alias k='ve kubectl $@'
+alias k='kubectl $@'
+alias vek='ve kubectl $@'
 alias kns='ve kubens $@'
 alias vstern='ve stern $@'
 alias eks-sandbox='aws-vault exec sandbox.tf -- aws eks update-kubeconfig --name di-sandbox-cluster $@ && export AWS_DEFAULT_PROFILE=sandbox.tf'
