@@ -20,6 +20,8 @@ brew "kubectx"
 brew "stern"
 tap "blendle/blendle"
 brew "kns"
+cask "virtualbox"
+brew "minikube"
 
 # aws
 brew "aws-iam-authenticator"
