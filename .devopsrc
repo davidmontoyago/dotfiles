@@ -1,4 +1,9 @@
-#zsh plugins
+# helm@2
+helm init --client-only > /dev/null
+export HELMPATH="/usr/local/opt/helm@2/bin"
+export PATH=$HELMPATH:$PATH
+
+# zsh plugins
 autoload -U colors; colors
 source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'

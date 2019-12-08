@@ -22,7 +22,8 @@ tap "blendle/blendle"
 brew "kns"
 cask "virtualbox"
 brew "minikube"
-brew "kubernetes-helm"
+# kubernetes-helm v2.16.1
+brew "helm@2"
 
 # aws
 brew "aws-iam-authenticator"
