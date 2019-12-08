@@ -6,6 +6,9 @@ printf "brew time...\n"
 
 install_dotfile "Brewfile" "homebrew"
 
+# 3.0a breaks plugin manager
+brew pin tmux
+
 printf "\nupdating brew...\n"
 brew update
 
