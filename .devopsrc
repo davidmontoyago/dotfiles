@@ -3,6 +3,9 @@ helm init --client-only > /dev/null
 export HELMPATH="/usr/local/opt/helm@2/bin"
 export PATH=$HELMPATH:$PATH
 
+# use minikube's docker daemon
+eval $(minikube docker-env)
+
 # zsh plugins
 autoload -U colors; colors
 source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
