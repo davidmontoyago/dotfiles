@@ -5,6 +5,7 @@ export PATH=$HELMPATH:$PATH
 
 # use minikube's docker daemon
 eval $(minikube docker-env)
+alias mk='minikube $@'
 
 # zsh plugins
 autoload -U colors; colors
