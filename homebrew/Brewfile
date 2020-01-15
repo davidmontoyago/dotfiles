@@ -37,6 +37,7 @@ cask "adoptopenjdk"
 
 # commands
 brew "watch"
+brew "gettext", link: true
 
 # linters
 brew "hadolint"
