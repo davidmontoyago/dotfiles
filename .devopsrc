@@ -4,7 +4,7 @@ export HELMPATH="/usr/local/opt/helm@2/bin"
 export PATH=$HELMPATH:$PATH
 
 # use minikube's docker daemon
-eval $(minikube docker-env)
+eval $(minikube docker-env 2>/dev/null)
 alias mk='minikube $@'
 
 # zsh plugins
