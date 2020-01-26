@@ -1,5 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "go.formatTool": "goimports",
-    "markdown-preview-enhanced.liveUpdate": false
+    "markdown-preview-enhanced.liveUpdate": false,
+    "explorer.confirmDragAndDrop": false
 }
