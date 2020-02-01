@@ -45,5 +45,6 @@ brew "yamllint"
 
 # tools
 brew "jq"
+brew "yq"
 brew "circleci"
 cask "wireshark"
