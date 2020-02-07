@@ -32,6 +32,9 @@ cask "aws-vault"
 brew "awscli"
 brew "chamber"
 
+# gcp
+cask "google-cloud-sdk"
+
 # java
 cask "adoptopenjdk"
 
