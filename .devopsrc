@@ -29,6 +29,7 @@ alias kistio='k -n istio-system $@'
 alias kkube='k -n kube-system $@'
 alias kdog='k -n datadog $@'
 alias kcore='k -n di-core $@'
+alias kall='k get --all-namespaces $@'
 alias kallpods='k get pods --all-namespaces $@'
 alias rochamber='AWS_DEFAULT_PROFILE=read-only ve chamber $@'
 
