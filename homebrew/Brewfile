@@ -25,6 +25,8 @@ cask "virtualbox"
 brew "minikube"
 # kubernetes-helm v2.16.1
 brew "helm@2"
+# helm 3
+brew "helm"
 
 # aws
 brew "aws-iam-authenticator"

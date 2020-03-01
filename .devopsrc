@@ -1,7 +1,5 @@
 # helm@2
-helm init --client-only > /dev/null
-export HELMPATH="/usr/local/opt/helm@2/bin"
-export PATH=$HELMPATH:$PATH
+alias helm2="/usr/local/opt/helm@2/bin/helm"
 
 # use minikube's docker daemon
 eval $(minikube docker-env 2>/dev/null)
