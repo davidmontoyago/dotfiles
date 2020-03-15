@@ -19,7 +19,7 @@ alias k='kubectl $@'
 alias vek='ve kubectl $@'
 alias kns='ve kubens $@'
 alias vstern='ve stern $@'
-alias kvent='watcha k get events --sort-by='.metadata.creationTimestamp' --all-namespaces'
+alias kvent="watcha 'kubectl get events --sort-by='.metadata.creationTimestamp' --all-namespaces | tail -n +2 | sort -k2 -n'"
 alias eks-sandbox='aws-vault exec sandbox.tf -- aws eks update-kubeconfig --name di-sandbox-cluster $@ && export AWS_DEFAULT_PROFILE=sandbox.tf'
 alias eks-prod='aws-vault exec prod.tf -- aws eks update-kubeconfig --name di-prod-cluster $@ && export AWS_DEFAULT_PROFILE=prod.tf'
 
