@@ -1,4 +1,5 @@
 k--kato.intellij-idea-keybindings
+mjmcloug.vscode-elixir
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.Go
