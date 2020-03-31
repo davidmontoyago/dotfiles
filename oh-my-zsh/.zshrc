@@ -10,6 +10,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="awesomepanda"
 
+# For security reasons compinit also checks if the completion system would use files
+# not owned by root or by the current user, or files in directories that
+# are world- or group-writable or that are not owned by root or by the current user.
+# If such files or directories are found, compinit will ask if the
+# completion system should really be used.
+ZSH_DISABLE_COMPFIX="true"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/

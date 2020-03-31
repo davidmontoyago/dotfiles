@@ -9,7 +9,6 @@ cask "atom"
 cask "visual-studio-code"
 brew "go"
 brew "python3"
-brew "python@2"
 brew "rbenv"
 brew "protobuf"
 
