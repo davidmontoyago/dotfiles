@@ -2,7 +2,7 @@
 alias helm2="/usr/local/opt/helm@2/bin/helm"
 
 # use minikube's docker daemon
-eval $(minikube docker-env 2>/dev/null)
+eval $(minikube docker-env > /dev/null 2>&1)
 alias mk='minikube $@'
 
 # unset minikube's docker daemon
