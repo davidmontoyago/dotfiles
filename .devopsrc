@@ -2,6 +2,7 @@
 # Valid levels are: [TRACE DEBUG INFO WARN ERROR]
 # Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
 export TF_LOG=INFO
+alias tf='terraform $@'
 
 # helm@2
 alias helm2="/usr/local/opt/helm@2/bin/helm"
