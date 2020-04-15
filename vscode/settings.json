@@ -2,5 +2,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "go.formatTool": "goimports",
     "markdown-preview-enhanced.liveUpdate": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "files.insertFinalNewline": true
 }
