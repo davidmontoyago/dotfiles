@@ -16,7 +16,10 @@ export GOPATH=$HOME/projects/go
 export GOBIN=$GOPATH/bin
 export PATH=$GOPATH:$PATH
 export PATH=$GOBIN:$PATH
+
 alias goworkspace='cd $GOPATH/src/github.com/davidmontoyago'
 alias gow=goworkspace
+
+alias gop='cd $HOME/projects'
 
 source ~/.bashrc
