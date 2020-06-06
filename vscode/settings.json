@@ -3,5 +3,8 @@
     "go.formatTool": "goimports",
     "markdown-preview-enhanced.liveUpdate": false,
     "explorer.confirmDragAndDrop": false,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
+    "go.useLanguageServer": true,
+    "editor.renderWhitespace": "all"
 }
