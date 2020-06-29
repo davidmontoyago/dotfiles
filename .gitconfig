@@ -1,9 +1,9 @@
 [core]
-	safecrlf = false
+  safecrlf = false
   pager = "less -FX"
   excludesFile = .gitignore
-	editor = vim
-	autocrlf = false
+  editor = vim
+  autocrlf = false
 
 [alias]
   co = checkout
