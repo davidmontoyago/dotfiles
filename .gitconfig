@@ -35,6 +35,9 @@
 [push]
   default = simple
 
+[pull]
+  rebase = true
+
 [user]
 	name = David Montoya
 	email = davidmontoyago@gmail.com
