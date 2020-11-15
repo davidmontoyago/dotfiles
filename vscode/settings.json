@@ -5,6 +5,10 @@
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "files.eol": "\n",
-    "go.useLanguageServer": true,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "go.languageServerExperimentalFeatures": {},
+    "window.nativeFullScreen": false,
+    "workbench.activityBar.visible": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.tabSize": 2
 }

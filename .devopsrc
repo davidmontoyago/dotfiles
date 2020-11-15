@@ -8,6 +8,7 @@ alias tf='terraform $@'
 alias helm2="/usr/local/opt/helm@2/bin/helm"
 
 # use minikube's docker daemon
+# TODO > /dev/null breaks the eval
 eval $(minikube docker-env > /dev/null 2>&1)
 alias mk='minikube $@'
 
@@ -17,35 +18,18 @@ alias unkube='eval $(minikube docker-env --unset)'
 # zsh plugins
 autoload -U colors; colors
 source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
-RPROMPT='%{$fg[red]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
-# vault-exec
-ve () {
-  aws-vault exec "${AWS_DEFAULT_PROFILE:-read-only}" -- "$@"
-}
+# kube prompt
+RPROMPT='%{$fg[yellow]%}[k:$ZSH_KUBECTL_PROMPT]%{$reset_color%}%{$fg[green]%} %D{%a %T}%{$reset_color%}'
 
 alias k='kubectl $@'
-alias vek='ve kubectl $@'
-alias kns='ve kubens $@'
-alias vstern='ve stern $@'
-alias kvent="watcha 'kubectl get events --sort-by='.metadata.creationTimestamp' --all-namespaces | tail -n +2 | sort -k2 -n'"
-alias eks-sandbox='aws-vault exec sandbox.tf -- aws eks update-kubeconfig --name di-sandbox-cluster $@ && export AWS_DEFAULT_PROFILE=sandbox.tf'
-alias eks-prod='aws-vault exec prod.tf -- aws eks update-kubeconfig --name di-prod-cluster $@ && export AWS_DEFAULT_PROFILE=prod.tf'
-
 alias kistio='k -n istio-system $@'
 alias kkube='k -n kube-system $@'
 alias kdog='k -n datadog $@'
-alias kcore='k -n di-core $@'
 alias kall='k get --all-namespaces $@'
 alias kallpods='k get pods --all-namespaces $@'
-alias rochamber='AWS_DEFAULT_PROFILE=read-only ve chamber $@'
 
-alias p-sandbox='export AWS_DEFAULT_PROFILE=sandbox.tf'
-alias p-prod='export AWS_DEFAULT_PROFILE=prod.tf'
-alias v-prod='p-prod && export VAULT_ADDR=https://vault.services.mycloud.com'
-
-alias consul-login='export CONSUL_HTTP_TOKEN=$(vault read -field token consul/creds/admin)'
-alias vault-login='aws-vault exec $AWS_DEFAULT_PROFILE -- vault login -method=aws role=admin'
+alias vault-consul-login='export CONSUL_HTTP_TOKEN=$(vault read -field token consul/creds/admin)'
 
 alias topcpu='k top pod --all-namespaces | sort --reverse --key 3 --numeric | head -20'
 alias topmem='k top pod --all-namespaces | sort --reverse --key 4 --numeric | head -20'
@@ -53,7 +37,13 @@ alias topmem='k top pod --all-namespaces | sort --reverse --key 4 --numeric | he
 # watch with aliases
 alias watcha='watch '
 # watch kubectl
-alias watchk='watch aws-vault exec $AWS_DEFAULT_PROFILE -- kubectl "$@"'
+alias watchk='watch kubectl "$@"'
 
 # unset all AWS* like env vars
 alias unsetaws='unset $(env | grep -i aws | sed '"'"'s/=/ /g'"'"' | awk "{print $1}" | xargs)'
+
+# unset all GOOGLE* like env vars
+alias unsetg='unset $(env | grep -i google | sed '"'"'s/=/ /g'"'"' | awk "{print $1}" | xargs)'
+
+# unset all VAULT* like env vars
+alias unsetg='unset $(env | grep -i vault | sed '"'"'s/=/ /g'"'"' | awk "{print $1}" | xargs)'
