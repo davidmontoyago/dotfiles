@@ -17,6 +17,8 @@ export GOBIN=$GOPATH/bin
 export PATH=$GOPATH:$PATH
 export PATH=$GOBIN:$PATH
 
+export EDITOR=$(command -v vim)
+
 alias goworkspace='cd $GOPATH/src/github.com/davidmontoyago'
 alias gow=goworkspace
 
