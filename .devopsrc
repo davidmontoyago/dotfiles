@@ -23,11 +23,13 @@ source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%{$fg[yellow]%}[k:$ZSH_KUBECTL_PROMPT]%{$reset_color%}%{$fg[green]%} %D{%a %T}%{$reset_color%}'
 
 alias k='kubectl $@'
-alias kistio='k -n istio-system $@'
-alias kkube='k -n kube-system $@'
-alias kdog='k -n datadog $@'
 alias kall='k get --all-namespaces $@'
 alias kallpods='k get pods --all-namespaces $@'
+alias kdog='k -n datadog $@'
+alias kistio='k -n istio-system $@'
+alias kkube='k -n kube-system $@'
+alias kkong='k -n kong $@'
+alias kvault='k -n vault $@'
 
 alias vault-consul-login='export CONSUL_HTTP_TOKEN=$(vault read -field token consul/creds/admin)'
 

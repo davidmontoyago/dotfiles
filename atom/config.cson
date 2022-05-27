@@ -10,6 +10,7 @@
   autosave:
     enabled: true
   core:
+    audioBeep: false
     customFileTypes:
       "source.hcl": [
         "tf.jinja2"
@@ -26,8 +27,9 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontSize: 15
+    fontSize: 13
     preferredLineLength: 120
+    showInvisibles: true
   "exception-reporting":
     userId: "4b7f5c28-3055-4628-a173-cc5341aa0c69"
   "go-plus":
@@ -39,11 +41,6 @@
       runTestsWithCoverage: false
       runTestsWithShortFlag: false
       timeout: 0
-  "ide-python":
-    pylsPlugins:
-      pycodestyle:
-        maxLineLength: 120
-    python: "python3"
   "markdown-preview":
     useGitHubStyle: true
   "tree-view":
