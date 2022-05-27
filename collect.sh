@@ -1,7 +1,11 @@
 #!/bin/bash
+
+echo "better have my dotfiles when i come to collect.sh... 💵💵💵"
+
 set -x
 
-cp ~/Brewfile ./homebrew/
+brew bundle dump --force --file ./homebrew/Brewfile
+
 cp ~/.zshrc ./oh-my-zsh/
 cp ~/.tmux.conf ./tmux/
 cp ~/.bash_profile .

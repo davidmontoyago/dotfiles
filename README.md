@@ -3,7 +3,4 @@
 ```
 ./install.sh
 ```
-or
-```
-./collect.sh
-```
+or, better have my dotfiles when i come to `./collect.sh` :dollar::dollar::dollar:
