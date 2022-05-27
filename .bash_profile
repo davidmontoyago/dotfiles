@@ -1,9 +1,6 @@
 # my binaries
 export PATH=$HOME/bin:$PATH
 
-#java
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 
