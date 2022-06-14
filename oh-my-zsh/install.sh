@@ -6,4 +6,4 @@ printf "\ninstalling of-my-zsh...\n"
 
 install_dotfile ".zshrc" "oh-my-zsh"
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
