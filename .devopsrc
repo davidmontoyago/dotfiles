@@ -48,4 +48,4 @@ alias unsetaws='unset $(env | grep -i aws | sed '"'"'s/=/ /g'"'"' | awk "{print 
 alias unsetg='unset $(env | grep -i google | sed '"'"'s/=/ /g'"'"' | awk "{print $1}" | xargs)'
 
 # unset all VAULT* like env vars
-alias unsetg='unset $(env | grep -i vault | sed '"'"'s/=/ /g'"'"' | awk "{print $1}" | xargs)'
+alias unsetv='unset $(env | grep -i vault | sed '"'"'s/=/ /g'"'"' | awk "{print $1}" | xargs)'

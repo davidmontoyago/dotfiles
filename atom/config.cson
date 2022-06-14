@@ -22,8 +22,7 @@
         "yaml.tmpl"
       ]
     disabledPackages: [
-      "atom-beautify"
-      "ide-java"
+      "spell-check"
     ]
     telemetryConsent: "no"
   editor:
