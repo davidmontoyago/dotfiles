@@ -17,7 +17,7 @@ alias unkube='eval $(minikube docker-env --unset)'
 
 # zsh plugins
 autoload -U colors; colors
-source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
+source /opt/homebrew/etc/zsh-kubectl-prompt/kubectl.zsh
 
 # kube prompt
 RPROMPT='%{$fg[yellow]%}[k:$ZSH_KUBECTL_PROMPT]%{$reset_color%}%{$fg[green]%} %D{%a %T}%{$reset_color%}'
