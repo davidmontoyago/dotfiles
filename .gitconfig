@@ -54,4 +54,6 @@
   allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 [init]
-  templateDir = /Users/davidmontoya/.git-templates/git-secrets
+	templateDir = /Users/davidmontoya/.git-templates/git-secrets
+[commit]
+	gpgsign = true

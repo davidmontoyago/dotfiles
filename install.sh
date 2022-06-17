@@ -21,6 +21,8 @@ install_dotfile ".gitconfig"
 
 bash ./git-secrets/configure.sh
 
+bash ./gnupg/configure.sh
+
 bash ./golang/configure.sh
 
 printf "\ndone." && chsh -s $(which zsh) && zsh
