@@ -16,10 +16,12 @@
     "editor.tabSize": 2,
     "[javascript]": {
         "editor.tabSize": 4,
-        "editor.detectIndentation": false,
+        "editor.detectIndentation": false
     },
     "redhat.telemetry.enabled": false,
     "vs-kubernetes": {
         "vscode-kubernetes.minikube-path.mac": "${env:HOME}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    }
+    },
+    "gitlens.showWelcomeOnInstall": false,
+    "gitlens.toggleLineBlame": true
 }

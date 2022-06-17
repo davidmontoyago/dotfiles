@@ -12,7 +12,7 @@ brew "aws-iam-authenticator"
 brew "python@3.9"
 brew "awscli"
 brew "chamber"
-brew "circleci", link: false
+brew "circleci"
 brew "consul"
 brew "coreutils"
 brew "gettext"
