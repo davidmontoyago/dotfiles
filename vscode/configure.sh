@@ -2,7 +2,7 @@
 set +u
 source ./functions.sh
 
-install_dotfile "settings.json" "vscode" "$HOME/Library/ApplicationSupport/Code/User/"
+install_dotfile "settings.json" "vscode" "$HOME/Library/Application Support/Code/User/"
 
 while read vscodeext; do
     code --install-extension "$vscodeext"

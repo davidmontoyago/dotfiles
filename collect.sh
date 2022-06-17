@@ -14,7 +14,7 @@ cp ~/.devopsrc .
 cp ~/.gitconfig .
 cp ~/.vimrc ./vim/
 cp ~/.atom/config.cson ./atom/
-cp ~/Library/ApplicationSupport/Code/User/settings.json ./vscode/
+cp  "$HOME/Library/Application Support/Code/User/settings.json" ./vscode/
 
 apm list --installed --bare | sort | sed '1d' > ./atom/package-list.txt
 

@@ -11,7 +11,7 @@
     "workbench.activityBar.visible": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "jsonnet.libPaths": [
-        "${env:HOME}/projects/kube-libsonnet/kube.libsonnet",
+        "${env:HOME}/projects/kube-libsonnet/kube.libsonnet"
     ],
     "editor.tabSize": 2,
     "[javascript]": {
