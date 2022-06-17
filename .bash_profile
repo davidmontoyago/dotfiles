@@ -17,6 +17,7 @@ export PATH=$GOBIN:$PATH
 # gpg-agent
 export GPG_TTY=$(tty)
 
+export TERM=xterm
 export EDITOR=$(command -v vim)
 
 alias goworkspace='cd $GOPATH/src/github.com/davidmontoyago'
