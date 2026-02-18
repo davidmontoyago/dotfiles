@@ -1,18 +1,15 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "go.formatTool": "goimports",
     "markdown-preview-enhanced.liveUpdate": false,
     "explorer.confirmDragAndDrop": false,
-    "files.insertFinalNewline": true,
     "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
     "editor.renderWhitespace": "all",
-    "go.languageServerExperimentalFeatures": {},
+    "editor.formatOnSave": true,
+    "editor.mouseWheelZoom": true,
     "window.nativeFullScreen": false,
-    "workbench.activityBar.visible": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "jsonnet.libPaths": [
-        "${env:HOME}/projects/kube-libsonnet/kube.libsonnet"
-    ],
+    "diffEditor.ignoreTrimWhitespace": true,
     "editor.tabSize": 2,
     "[javascript]": {
         "editor.tabSize": 4,
@@ -20,8 +17,50 @@
     },
     "redhat.telemetry.enabled": false,
     "vs-kubernetes": {
-        "vscode-kubernetes.minikube-path.mac": "${env:HOME}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+        "vscode-kubernetes.minikube-path.mac": "${env:HOME}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.minikube-show-information-expiration": "2025-12-13T00:15:56.324Z"
     },
-    "gitlens.showWelcomeOnInstall": false,
-    "gitlens.toggleLineBlame": true
+    "opa.dependency_paths.opa": "/Users/David/opa",
+    "yaml.schemas": {
+        "file:///Users/David/.vscode/extensions/continue.continue-1.2.4-darwin-arm64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ]
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "docker.extension.enableComposeLanguageServer": false,
+    "makefile.configureOnOpen": false,
+    "go.installDependenciesWhenBuilding": true,
+    "go.languageServerFlags": [],
+    "gopls": {},
+    "codeium.enableConfig": {
+        "*": false,
+        "markdown": true
+    },
+    "continue.enableTabAutocomplete": false,
+    "codeium.enableCodeLens": false,
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "go": true,
+        "python": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "go.inferGopath": true
 }
