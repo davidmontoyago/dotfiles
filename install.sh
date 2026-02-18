@@ -8,8 +8,6 @@ bash ./oh-my-zsh/install.sh
 
 bash ./tmux/configure.sh
 
-bash ./atom/configure.sh
-
 bash ./vscode/configure.sh
 
 bash ./vim/configure.sh

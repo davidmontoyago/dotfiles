@@ -13,9 +13,6 @@ cp ~/.bashrc .
 cp ~/.devopsrc .
 cp ~/.gitconfig .
 cp ~/.vimrc ./vim/
-cp ~/.atom/config.cson ./atom/
 cp  "$HOME/Library/Application Support/Code/User/settings.json" ./vscode/
-
-apm list --installed --bare | sort | sed '1d' > ./atom/package-list.txt
 
 code --list-extensions | sort > ./vscode/extension-list.txt

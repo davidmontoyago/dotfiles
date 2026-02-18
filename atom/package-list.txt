@@ -1,9 +1,0 @@
-copy-as-rtf@0.9.3
-file-type-icons@1.3.4
-formatter-json@1.0.1
-ide-yaml@0.4.4
-intellij-idea-keymap@0.2.3
-language-hcl@0.4.0
-language-protobuf@0.7.1
-language-terraform@0.8.1
-python-indent@1.1.7
