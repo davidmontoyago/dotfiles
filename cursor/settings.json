@@ -1,0 +1,65 @@
+{
+    "markdown-preview-enhanced.liveUpdate": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSave": true,
+    "window.nativeFullScreen": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.tabSize": 2,
+    "[javascript]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
+    },
+    "redhat.telemetry.enabled": false,
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.mac": "${env:HOME}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.minikube-show-information-expiration": "2025-12-13T00:15:56.324Z"
+    },
+    "opa.dependency_paths.opa": "/Users/David/opa",
+    "yaml.schemas": {
+        "file:///Users/David/.cursor/extensions/continue.continue-1.2.11-darwin-arm64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ],
+        "file:///Users/David/.cursor/extensions/continue.continue-1.2.14-darwin-arm64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ]
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "docker.extension.enableComposeLanguageServer": false,
+    "makefile.configureOnOpen": false,
+    "go.installDependenciesWhenBuilding": true,
+    "go.languageServerFlags": [],
+    "gopls": {},
+    "go.toolsGopath": "",
+    "codeium.enableConfig": {
+        "*": false,
+        "markdown": true
+    },
+    "continue.enableTabAutocomplete": false,
+    "workbench.colorTheme": "Default Dark Modern",
+    "editor.mouseWheelZoom": true,
+    "continue.showInlineTip": false,
+    "go.inferGopath": true,
+    "git.openRepositoryInParentFolders": "never",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "cursor.cpp.disabledLanguages": [
+        "plaintext"
+    ]
+}

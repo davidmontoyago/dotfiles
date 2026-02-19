@@ -16,6 +16,7 @@ install_dotfile ".bash_profile"
 install_dotfile ".bashrc"
 install_dotfile ".devopsrc"
 install_dotfile ".gitconfig"
+install_dotfile "settings.json" "cursor"  "$HOME/Library/ApplicationSupport/Cursor/User"
 
 bash ./git-secrets/configure.sh
 

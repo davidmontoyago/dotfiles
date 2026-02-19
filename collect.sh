@@ -14,5 +14,6 @@ cp ~/.devopsrc .
 cp ~/.gitconfig .
 cp ~/.vimrc ./vim/
 cp  "$HOME/Library/Application Support/Code/User/settings.json" ./vscode/
+cp  "$HOME/Library/ApplicationSupport/Cursor/User/settings.json" ./cursor/
 
 code --list-extensions | sort > ./vscode/extension-list.txt
