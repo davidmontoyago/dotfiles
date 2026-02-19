@@ -8,7 +8,7 @@ mkdir -p "$GOWORKSPACE"
 mkdir -p "$HOME/bin"
 
 # delve debugger
-go get -u github.com/go-delve/delve/cmd/dlv
+go install github.com/go-delve/delve/cmd/dlv@latest
 
 # protoc go plugin
-go get -u github.com/golang/protobuf/protoc-gen-go
+go install github.com/golang/protobuf/protoc-gen-go@latest
