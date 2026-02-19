@@ -13,7 +13,7 @@
   type = cat-file -t
   dump = cat-file -p
   fullhashlog = "log --graph --abbrev-commit '--format=format:%H %C(yellow)%ci%Creset %Cgreen%an%Creset | %s'"
-  w = whatchanged
+  w = log --raw --no-merges
   unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
   p = pull
   pr = pull --rebase
